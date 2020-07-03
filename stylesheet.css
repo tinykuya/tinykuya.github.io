@@ -19,7 +19,7 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(construction-2.jpg);
+  background-image: url(under-construction-page.png);
   background-size: cover;
   color: white;
   text-align: center;
@@ -29,6 +29,9 @@ a {
   opacity: 0.7;
   font-size: 45px;
   letter-spacing: 5px;
+  animation-name: importante;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .top-wrapper p {
@@ -78,15 +81,15 @@ a {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34,49,52,0.9);
+  background-color: rgba(255,255,255,0.9);
   position :fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+  height: 55px;
+  margin-top: 5px;
 }
 
 .header-left {
@@ -101,14 +104,14 @@ header {
 .header-right a {
   line-height: 65px;
   padding: 0 25px;
-  color: white;
+  color: #5f5d60;
   display: block;
   float: left;
   transition: all 0.5s;
 }
 
 .header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(120,120,255,0.3);
 }
 
 .lesson-wrapper {
@@ -116,8 +119,15 @@ header {
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
+  background-color: white;
   text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.lesson-icon img {
+  width: 70%;
+  height : 70%;
 }
 
 .heading {
@@ -136,14 +146,14 @@ header {
 }
 
 .lesson-icon {
-  position: relative;
+  /*position: relative;*/
 }
 
 .lesson-icon p {
-  position: absolute;
+  /*position: absolute;*/
   top: 37%;
   width: 100%;
-  color: white;
+  color: #b3aeb5;
 }
 
 .text-contents {
@@ -201,6 +211,24 @@ footer {
 
 .clear {
   clear: left;
+}
+
+@keyframes importante {
+  0% {color: red;}
+  50% {color: yellow;}
+  100% {color:red;}
+}
+
+.light-up {
+  font-size: 25px;
+  color : red;
+  animation-name: importante;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.light-up:hover {
+  font-size: 50px;
 }
 
 @media all and (max-width: 1000px) {
